@@ -2,4 +2,5 @@
 <p>Description: <%= @task.description %></p>
 <p>Done: <%= @task.done %></p>
 <p><%= link_to 'Return to tasks', tasks_path %></p>
-<p><%= link_to 'Edit this task', new_task_path %></p>
+<p><%= link_to 'Edit this task', edit_task_path(@task) %></p>
+<p><%= link_to "Delete", task_path(@task), method: :delete %></p>
